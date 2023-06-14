@@ -1,14 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <TestDiv>AAAAAAA TEST DIV</TestDiv>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,6 +19,8 @@ function App() {
       </header>
     </div>
   );
-}
+};
+
+const TestDiv = styled.div``;
 
 export default App;
