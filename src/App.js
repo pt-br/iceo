@@ -1,13 +1,7 @@
-import { Components } from 'pages/Components';
+import { Landing } from 'pages/Landing';
 
 const App = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Components />
-      </header>
-    </div>
-  );
+  return <Landing />;
 };
 
 export default App;
