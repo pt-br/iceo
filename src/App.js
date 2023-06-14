@@ -1,12 +1,11 @@
-import styled from 'styled-components';
-
-import Results from 'pages/Results/Results';
+import { Landing } from 'pages/Landing';
+import { Results } from 'pages/Results';
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Results />
+        <Landing />
       </header>
     </div>
   );
