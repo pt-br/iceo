@@ -5,6 +5,7 @@ import { Button } from 'components/Button';
 import { Step } from 'components/Step';
 
 import { Results } from 'pages/Results';
+import { Question } from 'components/Question/Question';
 
 export const Landing = () => {
   return (
@@ -19,6 +20,8 @@ export const Landing = () => {
         Button type 2
       </Button>
       <Results />
+      <Question title="jorge amado" details={['bullet', 'train']} />
+      <Question background title="jorge odiado" details={['max width', 'fit content', 'perfeito']} />
     </Page>
   );
 };
