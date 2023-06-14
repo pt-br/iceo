@@ -25,6 +25,7 @@ export const Wrapper = styled.div`
     border-radius: 50%;
     line-height: 0;
     font-size: 0;
+    margin-left: 2px;
   }
 
   .example-thumb {
