@@ -1,10 +1,10 @@
-import { Landing } from 'pages/Landing';
+import { Components } from 'pages/Components';
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Landing />
+        <Components />
       </header>
     </div>
   );

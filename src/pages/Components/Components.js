@@ -6,7 +6,7 @@ import { Step } from 'components/Step';
 
 import { Results } from 'pages/Results';
 
-export const Landing = () => {
+export const Components = () => {
   return (
     <Page>
       <Step mg="0 0 40px">1</Step>
