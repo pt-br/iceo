@@ -1,5 +1,4 @@
 import { Landing } from 'pages/Landing';
-import { Results } from 'pages/Results';
 
 const App = () => {
   return (

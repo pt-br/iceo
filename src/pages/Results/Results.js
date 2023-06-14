@@ -1,4 +1,4 @@
-import Chart from 'components/Chart';
+import { Chart } from 'components/Chart';
 import { options as Manager5to6Options } from 'model/Manager5to6';
 
 export const Results = () => {
