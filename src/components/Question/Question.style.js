@@ -20,4 +20,5 @@ export const Bullet = styled.li``;
 
 export const AnswerContainer = styled.div`
   width: 400px;
+  align-self: center;
 `;

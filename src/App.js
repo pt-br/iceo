@@ -1,7 +1,8 @@
+import { Components } from 'pages/Components';
 import { Landing } from 'pages/Landing';
 
 const App = () => {
-  return <Landing />;
+  return <Components />;
 };
 
 export default App;
