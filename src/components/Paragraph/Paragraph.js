@@ -1,9 +1,9 @@
 import { Regular, Small } from './Paragraph.style';
 
-export const Paragraph = ({ children, small = false }) => {
+export const Paragraph = ({ children, mg, small = false }) => {
   if (small) {
-    return <Small>{children}</Small>;
+    return <Small mg={mg}>{children}</Small>;
   }
 
-  return <Regular>{children}</Regular>;
+  return <Regular mg={mg}>{children}</Regular>;
 };

@@ -10,7 +10,9 @@ export const Landing = () => {
     <Page>
       <Heading>heading</Heading>
       <Paragraph>paragraphhhhh</Paragraph>
-      <Button onClick={() => console.log('hehe')}>olaaaaaa</Button>
+      <Button mg="20px 3px 50px 5px" onClick={() => console.log('hehe')}>
+        olaaaaaa
+      </Button>
       <Results />
     </Page>
   );

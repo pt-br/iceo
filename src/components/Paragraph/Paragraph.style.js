@@ -10,10 +10,12 @@ export const Regular = styled.div`
   ${DefaultStyle};
 
   font-size: 16px;
+  ${props => props.mg && `margin: ${props.mg}`};
 `;
 
 export const Small = styled.div`
   ${DefaultStyle};
 
   font-size: 14px;
+  ${props => props.mg && `margin: ${props.mg}`};
 `;
