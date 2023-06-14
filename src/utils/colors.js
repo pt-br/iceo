@@ -9,4 +9,6 @@ export const colors = {
   gray: '#3E3E40',
   black: '#1A1B1D',
   light_green: '#E1FFF5',
+  white: '#FFFFFF',
+  lightGrey: '#F1F3F6'
 };

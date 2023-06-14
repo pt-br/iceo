@@ -4,7 +4,7 @@ export const options = {
   },
 
   title: {
-    text: 'Budget vs spending',
+    text: 'Evaluation comparison',
     x: -80,
   },
 
