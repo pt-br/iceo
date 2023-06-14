@@ -1,15 +1,19 @@
 import styled, { css } from 'styled-components';
 
-import { colors } from 'utils';
+import { media, colors } from 'utils';
 
 const DefaultStyle = css`
   cursor: pointer;
   user-select: none;
   border-radius: 6px;
   padding: 12px 18px;
-  max-width: fit-content;
+  max-width: 100%;
   text-align: center;
   transition: all 0.2s ease-in-out 0s;
+
+  ${media.tablet`
+    max-width: fit-content;
+  `};
 `;
 
 export const ButtonWrapperType1 = styled.div`

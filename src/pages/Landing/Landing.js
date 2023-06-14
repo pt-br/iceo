@@ -3,7 +3,15 @@ import { Heading } from 'components/Heading';
 import { Paragraph } from 'components/Paragraph';
 import { Button } from 'components/Button';
 
-import { LandingCenter, LandingWrapper, LeftWrapper, RightWrapper } from './Landing.style';
+import {
+  LandingCenter,
+  LandingWrapper,
+  LeftWrapper,
+  RightWrapper,
+  MockChart,
+} from './Landing.style';
+
+import mockChart from 'assets/mockChart.svg';
 
 export const Landing = () => {
   return (
@@ -20,7 +28,9 @@ export const Landing = () => {
               Start
             </Button>
           </LeftWrapper>
-          <RightWrapper>aaaaaaa</RightWrapper>
+          <RightWrapper>
+            <MockChart src={mockChart} />
+          </RightWrapper>
         </LandingWrapper>
       </LandingCenter>
     </Page>
