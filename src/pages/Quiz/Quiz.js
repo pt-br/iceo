@@ -8,10 +8,14 @@ import { Page } from 'components/Page';
 import { Paragraph } from 'components/Paragraph';
 import { getMappedVote, getQuizData } from './utils';
 
-export const Quiz = ({ step = 1, goBack, goForward }) => {
+import { useNavigation } from 'hooks/useNavigation';
+
+export const Quiz = ({ step }) => {
   const [chartData, setChartData] = useState({});
 
   const quizData = getQuizData(step);
+
+  const { goBack, goForward } = useNavigation();
 
   const onChange = (idx, opt) => {
     const offset = step !== 1 ? 6 : 0;
