@@ -34,7 +34,7 @@ export const LandingWrapper = styled.div`
 export const LeftWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  flex-basis: 50%;
 `;
 
 export const RightWrapper = styled.div``;

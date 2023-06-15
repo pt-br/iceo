@@ -13,10 +13,10 @@ export const Components = () => {
       <Step mg="0 0 40px">1</Step>
       <Heading>Heading</Heading>
       <Paragraph mg="0 0 20px">Paragraph</Paragraph>
-      <Button onClick={() => console.log('onclick fn')} mg="0 0 10px">
+      <Button onClick={() => {}} mg="0 0 10px">
         Button type 1
       </Button>
-      <Button type={2} onClick={() => console.log('onclick fn')}>
+      <Button type={2} onClick={() => {}}>
         Button type 2
       </Button>
       <Results />
