@@ -58,7 +58,7 @@ export const Results = () => {
         needs you to be to achieve your next level.
       </Paragraph>
       <MediaCardsWrapper>{mediaCardsRender}</MediaCardsWrapper>
-      <Button type={2} onClick={resetFlow} mg="20px 0 0">
+      <Button type={2} onClick={resetFlow} mg="300px 0 0">
         RESET (Test)
       </Button>
     </Page>
