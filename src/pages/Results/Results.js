@@ -56,7 +56,7 @@ export const Results = () => {
         needs you to be to achieve your next level.
       </Paragraph>
       <MediaCardsWrapper>{mediaCardsRender}</MediaCardsWrapper>
-      <Button type={2} onClick={goBack}>
+      <Button type={2} onClick={goBack} mg="20px 0 0">
         GO_BACK_TEST
       </Button>
     </Page>
