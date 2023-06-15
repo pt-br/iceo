@@ -1,7 +1,7 @@
 export const colors = {
-  chart_1: '#85F1B7',
-  chart_2: '#00A7B4',
-  chart_3: '#9B83BA',
+  chart_1: '#FDC572',
+  chart_2: '#0F477F',
+  chart_3: '#02C9A5',
   button: '#ABF7E4',
   button_hover: '#71F0D9',
   button_text: '#105C4E',
