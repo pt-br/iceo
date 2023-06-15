@@ -42,7 +42,8 @@ export const Wrapper = styled.div`
     position: absolute;
     font-size: 14px;
     left: 0;
-    bottom: 20px;
+    bottom: 30px;
+    font-weight: 500;
   }
 
   .horizontal-slider {

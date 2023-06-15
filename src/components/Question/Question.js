@@ -9,7 +9,7 @@ import {
 import { Paragraph } from 'components/Paragraph';
 import { Slider } from 'components/Slider';
 
-export const Question = ({ title, details, background }) => {
+export const Question = ({ title, details, background, onChange }) => {
   return (
     <QuestionWrapper background={background}>
       <QuestionDetails>
@@ -23,7 +23,7 @@ export const Question = ({ title, details, background }) => {
         </QuestionBullets>
       </QuestionDetails>
       <AnswerContainer>
-        <Slider />
+        <Slider onChange={onChange} />
       </AnswerContainer>
     </QuestionWrapper>
   );

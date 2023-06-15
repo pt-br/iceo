@@ -10,7 +10,9 @@ export const QuestionWrapper = styled.div`
   background: ${props => (props.background ? colors.lightGrey : colors.white)};
 `;
 
-export const QuestionDetails = styled.div``;
+export const QuestionDetails = styled.div`
+  flex-basis: 60%;
+`;
 
 export const QuestionBullets = styled.ul`
   padding-left: 25px;
@@ -19,6 +21,7 @@ export const QuestionBullets = styled.ul`
 export const Bullet = styled.li``;
 
 export const AnswerContainer = styled.div`
-  width: 400px;
+  width: 100%;
+  flex-basis: 40%;
   align-self: center;
 `;
