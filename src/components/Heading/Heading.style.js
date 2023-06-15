@@ -14,6 +14,13 @@ export const H1 = styled.h1`
   ${props => props.mg && `margin: ${props.mg}`};
 `;
 
+export const H2 = styled.h2`
+  ${DefaultStyle};
+
+  font-weight: 500;
+  ${props => props.mg && `margin: ${props.mg}`};
+`;
+
 export const H3 = styled.h3`
   ${DefaultStyle};
 

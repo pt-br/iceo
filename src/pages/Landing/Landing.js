@@ -16,9 +16,7 @@ import {
 import mockChart from 'assets/mockChart.svg';
 
 export const Landing = () => {
-  const { goForward, goBack, currentStep } = useNavigation();
-
-  console.log('### currentStep on Landing', currentStep);
+  const { goForward, goBack } = useNavigation();
 
   return (
     <Page>

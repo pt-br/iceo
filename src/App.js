@@ -1,6 +1,6 @@
-import { Components } from 'pages/Components';
 import { Landing } from 'pages/Landing';
 import { Quiz } from 'pages/Quiz';
+import { Results } from 'pages/Results';
 
 import { useNavigation } from 'hooks/useNavigation';
 
@@ -12,7 +12,7 @@ const App = () => {
     case 2:
       return <Quiz step={currentStep} />;
     case 3:
-      return <Components />;
+      return <Results />;
     default:
       return <Landing />;
   }

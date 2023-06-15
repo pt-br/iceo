@@ -1,5 +1,5 @@
-import createPersistedState from 'use-persisted-state';
 import { useCallback } from 'react';
+import createPersistedState from 'use-persisted-state';
 
 const useStepState = createPersistedState('step');
 
