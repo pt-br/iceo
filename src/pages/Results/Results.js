@@ -66,7 +66,7 @@ export const Results = () => {
         }}
         mg="300px 0 0"
       >
-        RESET (Test)
+        RESET
       </Button>
     </Page>
   );
