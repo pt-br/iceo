@@ -23,13 +23,12 @@ export const Landing = () => {
       <LandingCenter>
         <LandingWrapper>
           <LeftWrapper>
-            <Heading>Let's start!</Heading>
+            <Heading>Welcome to iCEO!</Heading>
             <Paragraph mg="0 0 24px">
-              Lorem ipsum dolor sit amet consectetur. Tellus nisi turpis
-              dolor pharetra amet dis pellentesque etiam pharetra.
+              You are the CEO of your own career!
             </Paragraph>
             <Button mg="0 0 10px" onClick={goForward}>
-              Start
+              Let's Go!
             </Button>
           </LeftWrapper>
           <RightWrapper>

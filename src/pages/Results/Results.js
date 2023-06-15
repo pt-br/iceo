@@ -19,7 +19,7 @@ import {
 } from './Results.style';
 
 export const Results = () => {
-  const { goBack } = useNavigation();
+  const { resetFlow } = useNavigation();
   const { mappedChartData } = useChartData();
 
   const mediaCardsRender = useMemo(() => {
@@ -58,8 +58,8 @@ export const Results = () => {
         needs you to be to achieve your next level.
       </Paragraph>
       <MediaCardsWrapper>{mediaCardsRender}</MediaCardsWrapper>
-      <Button type={2} onClick={goBack} mg="20px 0 0">
-        GO_BACK_TEST
+      <Button type={2} onClick={resetFlow} mg="20px 0 0">
+        RESET (Test)
       </Button>
     </Page>
   );

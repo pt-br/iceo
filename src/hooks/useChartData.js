@@ -7,7 +7,7 @@ const useChartAnswers = createPersistedState('chartData');
 const getDefaultDataSet = () => {
   const dataSet = {};
 
-  [...Array(12)].forEach((_, i) => {
+  [...Array(13)].forEach((_, i) => {
     dataSet[i] = { y: 5, code: 'Assist' };
   });
 
