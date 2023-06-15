@@ -13,7 +13,7 @@ const scrollTop = () => {
 export const useNavigation = () => {
   const [step, setStep] = useStepState(0);
 
-  const resetFlow = useCallback(() => {
+  const resetSteps = useCallback(() => {
     setStep(0);
     scrollTop();
   });
@@ -36,6 +36,6 @@ export const useNavigation = () => {
     currentStep: step,
     goBack,
     goForward,
-    resetFlow,
+    resetSteps,
   };
 };

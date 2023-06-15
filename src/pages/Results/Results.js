@@ -19,8 +19,8 @@ import {
 } from './Results.style';
 
 export const Results = () => {
-  const { resetFlow } = useNavigation();
-  const { mappedChartData } = useChartData();
+  const { resetSteps } = useNavigation();
+  const { resetChartData, mappedChartData } = useChartData();
 
   const mediaCardsRender = useMemo(() => {
     return mediaCards.map(
@@ -58,7 +58,14 @@ export const Results = () => {
         needs you to be to achieve your next level.
       </Paragraph>
       <MediaCardsWrapper>{mediaCardsRender}</MediaCardsWrapper>
-      <Button type={2} onClick={resetFlow} mg="300px 0 0">
+      <Button
+        type={2}
+        onClick={() => {
+          resetSteps();
+          resetChartData();
+        }}
+        mg="300px 0 0"
+      >
         RESET (Test)
       </Button>
     </Page>

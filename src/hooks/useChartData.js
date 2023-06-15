@@ -1,6 +1,7 @@
-import { getSliderVote } from 'pages/Quiz/utils';
-import { useMemo } from 'react';
+import { useMemo, useCallback } from 'react';
 import createPersistedState from 'use-persisted-state';
+
+import { getSliderVote } from 'pages/Quiz/utils';
 
 const useChartAnswers = createPersistedState('chartData');
 
@@ -25,10 +26,15 @@ export const useChartData = () => {
     return mappedChartData.map(val => getSliderVote(val.y));
   }, [mappedChartData]);
 
+  const resetChartData = useCallback(() => {
+    setChartData(getDefaultDataSet());
+  }, []);
+
   return {
     chartData,
     setChartData,
     mappedChartData,
     sliderData,
+    resetChartData,
   };
 };
