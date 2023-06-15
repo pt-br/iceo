@@ -1,6 +1,6 @@
 import { colors } from 'utils';
 
-export const options = {
+export const getOptions = quizData => ({
   chart: {
     polar: true,
   },
@@ -32,8 +32,8 @@ export const options = {
     tickmarkPlacement: 'on',
     lineWidth: 0,
     labels: {
-      distance: 35
-    }
+      distance: 35,
+    },
   },
 
   yAxis: {
@@ -105,20 +105,7 @@ export const options = {
     {
       // type: 'area',
       name: 'Self Evaluation',
-      data: [
-        { y: 15, code: 'Guide' },
-        { y: 10, code: 'Do' },
-        { y: 15, code: 'Guide' },
-        { y: 10, code: 'Do' },
-        { y: 20, code: 'Lead' },
-        { y: 15, code: 'Guide' },
-        { y: 10, code: 'Do' },
-        { y: 15, code: 'Guide' },
-        { y: 10, code: 'Do' },
-        { y: 20, code: 'Lead' },
-        { y: 10, code: 'Do' },
-        { y: 20, code: 'Lead' },
-      ],
+      data: quizData,
       color: colors.chart_3,
     },
   ],
@@ -142,4 +129,4 @@ export const options = {
       },
     ],
   },
-};
+});

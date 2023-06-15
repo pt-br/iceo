@@ -2,17 +2,20 @@ import { Page } from 'components/Page';
 import { Heading } from 'components/Heading';
 import { Paragraph } from 'components/Paragraph';
 import { Chart } from 'components/Chart';
-import { options as Manager5to6Options } from 'model/Manager5to6';
+import { getOptions as Manager5to6Options } from 'model/Manager5to6';
+import { useChartData } from 'hooks/useChartData';
 
 export const Results = () => {
+  const { mappedChartData } = useChartData();
+
   return (
     <Page>
       <Heading>Here is your Career Journey Map</Heading>
-      <Paragraph mg="0 0 90px">
+      <Paragraph mg="0 0 50px">
         Here’s what we’ll use to plot a course for your own development
       </Paragraph>
-      <Chart options={Manager5to6Options} />
-      <Heading type={2} mg="170px 0 0">
+      <Chart options={Manager5to6Options(mappedChartData)} />
+      <Heading type={2} mg="45px 0 0">
         Here’s how you can embrace those opportunities for improvement and get you on a path toward
         promotion.
       </Heading>
