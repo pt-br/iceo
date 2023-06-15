@@ -9,17 +9,12 @@ import {
   ContentWrapper,
   ImageWrapper,
   TextWrapper,
+  Title,
   Arrow,
   ArticleImg,
 } from './MediaCard.style';
 
-export const MediaCard = ({
-  categoryTitle,
-  title,
-  description,
-  image,
-  link,
-}) => {
+export const MediaCard = ({ categoryTitle, title, image, link }) => {
   return (
     <MediaCardWrapper href={link} target="_blank">
       <CategoryTitleWrapper>
@@ -31,10 +26,7 @@ export const MediaCard = ({
           <ArticleImg src={image} />
         </ImageWrapper>
         <TextWrapper>
-          <Paragraph mg="0 0 2px">{title}</Paragraph>
-          <Paragraph small description>
-            {description}
-          </Paragraph>
+          <Title mg="0 0 6px">{title}</Title>
         </TextWrapper>
       </ContentWrapper>
     </MediaCardWrapper>
