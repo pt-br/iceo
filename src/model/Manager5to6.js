@@ -1,27 +1,39 @@
+import { colors } from 'utils';
+
 export const options = {
   chart: {
     polar: true,
   },
 
   title: {
-    text: 'Evaluation comparison',
-    x: -80,
+    text: '',
+    // x: -80,
   },
 
   pane: {
-    size: '100%',
+    size: '80%',
   },
 
   xAxis: {
     categories: [
+      'Inspire',
+      'Develop Talent',
+      'Day to Day Management',
       'Hiring',
       'Onboarding',
-      'Day-to-Day Management',
-      'Career Development + Recognition',
-      'High Standards of Ethics and Positive Culture Creation',
+      'Feedback',
+      'Problem Solving',
+      'Presentation Skills',
+      'Structural and Legal Comprehension',
+      'Workouts and Restructuring',
+      'Develop and Foster Relationships with Partners',
+      'Investment Level Underwriting and Analysis',
     ],
     tickmarkPlacement: 'on',
     lineWidth: 0,
+    labels: {
+      distance: 35
+    }
   },
 
   yAxis: {
@@ -34,6 +46,14 @@ export const options = {
 
   plotOptions: {
     area: {},
+    line: {
+      marker: {
+        enabled: false,
+      },
+    },
+    series: {
+      lineWidth: 2,
+    },
   },
 
   tooltip: {
@@ -45,7 +65,7 @@ export const options = {
 
   series: [
     {
-      type: 'area',
+      // type: 'area',
       name: 'Next level',
       data: [
         { y: 15, code: 'Guide' },
@@ -53,25 +73,37 @@ export const options = {
         { y: 15, code: 'Guide' },
         { y: 15, code: 'Guide' },
         { y: 20, code: 'Lead' },
+        { y: 15, code: 'Guide' },
+        { y: 15, code: 'Guide' },
+        { y: 15, code: 'Guide' },
+        { y: 15, code: 'Guide' },
+        { y: 20, code: 'Lead' },
+        { y: 15, code: 'Guide' },
+        { y: 20, code: 'Lead' },
       ],
-      pointPlacement: 'on',
-      color: '#85F1B7',
+      color: colors.chart_1,
     },
     {
-      type: 'area',
+      // type: 'area',
       name: 'Manager Evaluation',
       data: [
+        { y: 15, code: 'Guide' },
+        { y: 20, code: 'Lead' },
         { y: 10, code: 'Do' },
         { y: 15, code: 'Guide' },
         { y: 20, code: 'Lead' },
         { y: 10, code: 'Do' },
         { y: 15, code: 'Guide' },
+        { y: 20, code: 'Lead' },
+        { y: 10, code: 'Do' },
+        { y: 15, code: 'Guide' },
+        { y: 20, code: 'Lead' },
+        { y: 10, code: 'Do' },
       ],
-      pointPlacement: 'on',
-      color: '#00A7B4',
+      color: colors.chart_2,
     },
     {
-      type: 'area',
+      // type: 'area',
       name: 'Self Evaluation',
       data: [
         { y: 15, code: 'Guide' },
@@ -79,9 +111,15 @@ export const options = {
         { y: 15, code: 'Guide' },
         { y: 10, code: 'Do' },
         { y: 20, code: 'Lead' },
+        { y: 15, code: 'Guide' },
+        { y: 10, code: 'Do' },
+        { y: 15, code: 'Guide' },
+        { y: 10, code: 'Do' },
+        { y: 20, code: 'Lead' },
+        { y: 10, code: 'Do' },
+        { y: 20, code: 'Lead' },
       ],
-      pointPlacement: 'on',
-      color: '#9B83BA',
+      color: colors.chart_3,
     },
   ],
 

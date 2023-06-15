@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Button } from 'components/Button';
 import { Heading } from 'components/Heading';
 import { Question } from 'components/Question/Question';
@@ -9,9 +8,10 @@ import { Paragraph } from 'components/Paragraph';
 import { getMappedVote, getQuizData } from './utils';
 
 import { useNavigation } from 'hooks/useNavigation';
+import { useChartData } from 'hooks/useChartData';
 
 export const Quiz = ({ step }) => {
-  const [chartData, setChartData] = useState({});
+  const { setChartData } = useChartData();
 
   const quizData = getQuizData(step);
 
@@ -26,10 +26,6 @@ export const Quiz = ({ step }) => {
       [idx + offset]: mappedVal,
     }));
   };
-
-  useEffect(() => {
-    console.log('>>>', chartData);
-  }, [chartData]);
 
   return (
     <Page>
