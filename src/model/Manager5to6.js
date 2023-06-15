@@ -133,4 +133,8 @@ export const getOptions = quizData => ({
       },
     ],
   },
+
+  credits: {
+    enabled: false,
+  },
 });
