@@ -10,15 +10,15 @@ import { getMappedVote, getQuizData } from './utils';
 import { useNavigation } from 'hooks/useNavigation';
 import { useChartData } from 'hooks/useChartData';
 
-export const Quiz = ({ step }) => {
-  const { setChartData } = useChartData();
+export const Quiz = () => {
+  const { sliderData, setChartData } = useChartData();
 
-  const quizData = getQuizData(step);
+  const { currentStep, goBack, goForward } = useNavigation();
 
-  const { goBack, goForward } = useNavigation();
+  const quizData = getQuizData(currentStep);
 
   const onChange = (idx, opt) => {
-    const offset = step !== 1 ? 6 : 0;
+    const offset = currentStep !== 1 ? 6 : 0;
     const mappedVal = getMappedVote(opt);
 
     setChartData(prevState => ({
@@ -29,7 +29,7 @@ export const Quiz = ({ step }) => {
 
   return (
     <Page>
-      <Step>{step}</Step>
+      <Step>{currentStep}</Step>
       <Heading type={2} mg="16px 0">
         {quizData.title}
       </Heading>
@@ -42,10 +42,11 @@ export const Quiz = ({ step }) => {
           title={question.title}
           details={question.details}
           background={!(idx % 2)}
+          value={sliderData[(currentStep !== 1 ? 6 : 0) + idx]}
         />
       ))}
       <ButtonContainer>
-        {step > 1 ? (
+        {currentStep > 1 ? (
           <Button type={2} onClick={goBack}>
             Back
           </Button>

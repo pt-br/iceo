@@ -1,7 +1,7 @@
 import ReactSlider from 'react-slider';
 import { Wrapper } from './Slider.style';
 
-export const Slider = ({ onChange }) => {
+export const Slider = ({ onChange, value }) => {
   const thumbMap = value => {
     switch (value) {
       case 0:
@@ -21,6 +21,7 @@ export const Slider = ({ onChange }) => {
         className="horizontal-slider"
         marks
         markClassName="example-mark"
+        value={value}
         min={0}
         max={3}
         thumbClassName="example-thumb"

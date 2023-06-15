@@ -23,8 +23,15 @@ export const getMappedVote = value => {
   }
 };
 
-// { y: 10, code: 'Do' },
-//         { y: 15, code: 'Guide' },
-//         { y: 20, code: 'Lead' },
-//         { y: 10, code: 'Do' },
-//         { y: 15, code: 'Guide' },
+export const getSliderVote = value => {
+  switch (value) {
+    case 5:
+      return 0;
+    case 10:
+      return 1;
+    case 15:
+      return 2;
+    default:
+      return 3;
+  }
+};
