@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/iceo/static/css/main.e6c13ad2.css",
-    "main.js": "/iceo/static/js/main.9aa1597f.js",
+    "main.js": "/iceo/static/js/main.d2d486e1.js",
+    "static/media/articleMock.svg": "/iceo/static/media/articleMock.4eb36c97026496e964ff889444499ab7.svg",
     "static/media/mockChart.svg": "/iceo/static/media/mockChart.fe6bd0b290e8063a7058621e8308a665.svg",
     "index.html": "/iceo/index.html",
+    "static/media/arrow.svg": "/iceo/static/media/arrow.72fa0c316f06b86e9c8cb62564d15b26.svg",
     "main.e6c13ad2.css.map": "/iceo/static/css/main.e6c13ad2.css.map",
-    "main.9aa1597f.js.map": "/iceo/static/js/main.9aa1597f.js.map"
+    "main.d2d486e1.js.map": "/iceo/static/js/main.d2d486e1.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.9aa1597f.js"
+    "static/js/main.d2d486e1.js"
   ]
 }
