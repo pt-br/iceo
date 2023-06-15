@@ -1,3 +1,4 @@
+import { Components } from 'pages/Components';
 import { Landing } from 'pages/Landing';
 import { Components } from 'pages/Components';
 

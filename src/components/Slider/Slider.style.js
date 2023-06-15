@@ -38,6 +38,29 @@ export const Wrapper = styled.div`
     box-sizing: border-box;
   }
 
+  .mark-text {
+    position: absolute;
+    font-size: 14px;
+    left: 0;
+    bottom: 30px;
+    font-weight: 500;
+  }
+
+  .horizontal-slider {
+    .example-mark:nth-of-type(4) {
+      .mark-text {
+        right: 0;
+        left: unset;
+      }
+    }
+    .example-mark:nth-of-type(3) {
+      .mark-text {
+        right: -9px;
+        left: unset;
+      }
+    }
+  }
+
   .horizontal-slider .example-mark {
     top: 14px;
     width: 18px;
