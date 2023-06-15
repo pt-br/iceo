@@ -1,4 +1,4 @@
-import { PageWrapper } from './Page.style';
+import { PageWrapper, PageInner } from './Page.style';
 
 export const Page = ({ children }) => {
   return <PageWrapper>{children}</PageWrapper>;

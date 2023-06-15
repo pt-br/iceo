@@ -7,7 +7,8 @@ export const QuestionWrapper = styled.div`
   padding: 32px 52px;
   gap: 30px;
   justify-content: space-between;
-  background: ${props => (props.background ? colors.lightGrey : colors.white)};
+  background: ${props =>
+    props.background ? colors.light_grey : colors.white};
 `;
 
 export const QuestionDetails = styled.div`

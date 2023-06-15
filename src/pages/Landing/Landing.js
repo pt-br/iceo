@@ -16,7 +16,7 @@ import {
 import mockChart from 'assets/mockChart.svg';
 
 export const Landing = () => {
-  const { goForward, goBack } = useNavigation();
+  const { goForward } = useNavigation();
 
   return (
     <Page>
@@ -25,14 +25,11 @@ export const Landing = () => {
           <LeftWrapper>
             <Heading>Let's start!</Heading>
             <Paragraph mg="0 0 24px">
-              Lorem ipsum dolor sit amet consectetur. Tellus nisi turpis dolor pharetra amet dis
-              pellentesque etiam pharetra.
+              Lorem ipsum dolor sit amet consectetur. Tellus nisi turpis
+              dolor pharetra amet dis pellentesque etiam pharetra.
             </Paragraph>
             <Button mg="0 0 10px" onClick={goForward}>
               Start
-            </Button>
-            <Button type={2} mg="0 0 10px" onClick={goBack}>
-              Go back
             </Button>
           </LeftWrapper>
           <RightWrapper>
