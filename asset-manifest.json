@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/iceo/static/css/main.e6c13ad2.css",
-    "main.js": "/iceo/static/js/main.c02b9ac6.js",
+    "main.js": "/iceo/static/js/main.cedb3fac.js",
     "static/media/mockChart.svg": "/iceo/static/media/mockChart.fe6bd0b290e8063a7058621e8308a665.svg",
     "index.html": "/iceo/index.html",
     "main.e6c13ad2.css.map": "/iceo/static/css/main.e6c13ad2.css.map",
-    "main.c02b9ac6.js.map": "/iceo/static/js/main.c02b9ac6.js.map"
+    "main.cedb3fac.js.map": "/iceo/static/js/main.cedb3fac.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.c02b9ac6.js"
+    "static/js/main.cedb3fac.js"
   ]
 }
